@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_info">18sp</dimen>
+    <dimen name="create_account_words">24sp</dimen>
+    <dimen name="password_instruction">14sp</dimen>
+    <dimen name="email_display">16sp</dimen>
+    <dimen name="password_display">16sp</dimen>
+</resources>

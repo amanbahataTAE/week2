@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="create_account_button">Create an account</string>
+    <string name="main_info">GreenFlag customers can \n create an account to access</string>
+    <string name="sign_in_button">Sign in</string>
+    <string name="car_health">Car health updates</string>
+    <string name="request">Request a rescue online</string>
+    <string name="policy">Policy information</string>
+    <string name="title">Create an account</string>
+    <!--<string name="email_text">Email</string>-->
+    <string name="email_input_label">Email address</string>
+    <string name="password_input_label">Create password</string>
+    <string name="repeat_password">Repeat password</string>
+    <string name="password_information">Your password should have a minimum of 8 \n
+    characters and contain at least one \n number, one uppercase and one lowercase \n
+    letter. You can use special characters.</string>
+    <string name="change_photo">Change photo</string>
+    <string name="choose_birth_date">Choose birth date</string>
+    <string name="gender">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="not_specified">Not specified</string>
+    <string name="postal_address">Postal address (opt)</string>
+    <string name="save_button">Save</string>
+    <string name="no_value"></string>
+    <string name="date_picker_result_value">%d - %d - %d</string>
+    <string name="username">User email</string>
+    <string name="password">Password</string>
+    <string name="signin">Sign in</string>
+</resources>

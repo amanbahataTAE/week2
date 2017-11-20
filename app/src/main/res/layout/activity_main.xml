@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context="com.example.aman1.greenflag.MainActivity">
+
+    <ImageView
+        android:id="@+id/logo_green_flag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:paddingTop="40dp"
+        app:srcCompat="@drawable/logo_green_flag" />
+
+    <TextView
+        android:id="@+id/main_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo_green_flag"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/main_info"
+        android:textColor="@color/main_info_text_color"
+        android:textSize="@dimen/main_info" />
+
+    <TextView
+        android:id="@+id/car_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/main_info"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="39dp"
+        android:text="@string/car_health"
+        android:textColor="@color/main_info_text_color"
+        android:textSize="@dimen/main_info" />
+
+    <ImageView
+        android:id="@+id/thick1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/main_info"
+        android:layout_alignTop="@+id/car_health"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/tick"
+        android:adjustViewBounds="true"
+        android:maxWidth="15dp"
+        android:maxHeight="15dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/car_health"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/request"
+        android:textColor="@color/main_info_text_color"
+        android:textSize="@dimen/main_info" />
+
+    <ImageView
+        android:id="@+id/thick2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/main_info"
+        android:layout_alignTop="@+id/request"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/tick"
+        android:adjustViewBounds="true"
+        android:maxWidth="15dp"
+        android:maxHeight="15dp"
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:id="@+id/policy_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/request"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/policy"
+        android:textColor="@color/main_info_text_color"
+        android:textSize="@dimen/main_info" />
+
+    <ImageView
+        android:id="@+id/thick3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/main_info"
+        android:layout_alignTop="@+id/policy_info"
+        android:layout_marginTop="8dp"
+        app:srcCompat="@drawable/tick"
+        android:adjustViewBounds="true"
+        android:maxWidth="15dp"
+        android:maxHeight="15dp"
+        android:scaleType="fitCenter" />
+
+    <Button
+        android:id="@+id/sign_in_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/create_an_account_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/main_button"
+        android:onClick="clickButtonEvents"
+        android:text="@string/sign_in_button" />
+
+    <Button
+        android:id="@+id/create_an_account_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="33dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@color/main_button"
+        android:onClick="clickButtonEvents"
+        android:text="@string/create_account_button" />
+
+</RelativeLayout>
