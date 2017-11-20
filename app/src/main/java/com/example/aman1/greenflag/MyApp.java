@@ -35,7 +35,7 @@ public class MyApp extends Application{
         }
 
         /**
-         *
+         * Initializes Realm
          */
 
         Realm.init(getApplicationContext()); // applicationContext
