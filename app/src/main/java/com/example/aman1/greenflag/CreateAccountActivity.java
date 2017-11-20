@@ -168,6 +168,13 @@ public class CreateAccountActivity extends AppCompatActivity {
         }
     }
 
+
+    /**
+     * Checks the length of the user entered password
+     * @param mPassword
+     * @return
+     */
+
     private boolean isValidPassword(String mPassword) {
         return (mPassword.length() > PASSWORD_LENGHT);
     }
