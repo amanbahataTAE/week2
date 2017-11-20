@@ -25,3 +25,6 @@ captures/
 .idea/gradle.xml
 .idea/dictionaries
 .idea/libraries
+
+# Log Files
+*.log
