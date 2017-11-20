@@ -114,6 +114,11 @@ public class CreateAccountActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        /**
+         * Injects test login credentials for ease of access
+         */
         mEmail.setText("test@gmail.com");
         mPassword.setText("123456789");
         mConfirmPassword.setText("123456789");
