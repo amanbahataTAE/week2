@@ -1,44 +1,39 @@
 package com.example.aman1.greenflag;
 
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.aman1.greenflag.realm.RealmController;
 
-import io.realm.Realm;
+public class MainActivity extends Fragment {
 
-public class MainActivity extends AppCompatActivity {
+    private OnOptionSelected optionSelected;
 
-    private Button mSignIn, mCreateAccount;
-    private RealmController realmController;
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.activity_main, container, false);
+
+
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-
-        initializer();
+        setRetainInstance(true);
 
     }
 
-    public void initializer(){
-        this.mSignIn = (Button) findViewById(R.id.sign_in_button);
-        this.mCreateAccount = (Button) findViewById(R.id.create_an_account_button);
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        optionSelected = (OnOptionSelected) getActivity();
     }
-
-    public void clickButtonEvents(View view){
-        if (view.getId() == R.id.sign_in_button){
-            Intent intent = new Intent(MainActivity.this, SignInActivity.class);
-            startActivity(intent);
-        }else if (view.getId() == R.id.create_an_account_button) {
-            Intent intent = new Intent(MainActivity.this, CreateAccountActivity.class);
-            startActivity(intent);
-        }
-    }
-
-
 }

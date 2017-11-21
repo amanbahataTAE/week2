@@ -27,7 +27,6 @@
         android:layout_marginTop="15dp"
         android:adjustViewBounds="true"
         android:background="@color/mainBackground"
-        android:onClick="clickButtonEvents"
         android:scaleType="fitCenter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -146,7 +145,7 @@
         app:layout_constraintTop_toBottomOf="@+id/repeat_passwordInput" />
 
     <Button
-        android:id="@+id/create_an_account_button"
+        android:id="@+id/create_an_account"
         android:layout_width="0dp"
         android:layout_height="46dp"
         android:layout_alignParentBottom="true"
@@ -157,7 +156,6 @@
         android:background="@color/main_button"
         android:onClick="clickButtonEvents"
         android:text="@string/create_account_button"
-        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
